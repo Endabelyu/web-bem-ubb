@@ -1,9 +1,13 @@
 import React from 'react';
-
+import Navbar from './component/navbar';
+// import BEM from './component/bem';
+// import Kabinet from './component/kabinet';
+// import Form from './component/form';
+// import Footer from './component/footer';
 function App() {
   return (
     <div className="App">
-      <h1 className="text-3xl text-center font-bold underline">BEM UBB</h1>
+      <Navbar />
     </div>
   );
 }
