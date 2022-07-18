@@ -6,7 +6,7 @@ import { FiSearch } from 'react-icons/fi';
 import LogoBem from '../assets/LOGO BEM/LOGO BEM UBB.png';
 const navbar = () => {
   return (
-    <div className="p-2 shadow-lg">
+    <div className="p-2 shadow-lg top-0 left-0">
       <div className="flex  justify-between my-2">
         <ul className="flex ">
           <li>
