@@ -6,7 +6,7 @@ const bem = () => {
   };
   return (
     <div className="my-4 text-center">
-      <h1 className=" text-blue-900 font-'Montserrat' text-2xl font-bold my-4 md:text-4xl">
+      <h1 className=" text-blue-900 font-['Montserrat'] text-2xl font-bold my-4 md:text-4xl">
         Kembali Mengudara Bersama Energi Baru
       </h1>
       <img src="" alt="" />
@@ -17,8 +17,8 @@ const bem = () => {
         BEM KM UBB
       </div>
       <div className="my-4 w-3/5 mx-auto p-4 border-black border rounded-md">
-        <h2 className="font-bold">Visi BEM KM UBB 2022</h2>
-        <p className="italic">
+        <h2 className="font-bold text-lg">Visi BEM KM UBB 2022</h2>
+        <p className="italic text-md">
           "Restorasi BEM KM UBB sebagai suluh perjuangan dan Energi Karya dalam
           pengabdian untuk Bangka Belitung dan Indonesia."
         </p>

@@ -3,7 +3,8 @@ import { SiLinktree } from 'react-icons/si';
 import { SiInstagram } from 'react-icons/si';
 import { SiYoutube } from 'react-icons/si';
 import { FiSearch } from 'react-icons/fi';
-import LogoBem from '../assets/LOGO BEM/LOGO BEM UBB.png';
+import Images from '../assets/images.js';
+
 const navbar = () => {
   return (
     <div className="p-2 shadow-lg top-0 left-0">
@@ -25,7 +26,7 @@ const navbar = () => {
       <div className="flex justify-between my-2.5 px-10 ">
         <div>
           <img
-            src={LogoBem}
+            src={Images.logoBEM}
             className=" cursor-pointer object-center h-20  w-20"
             alt="Logo-BEM-UBB"
           />
