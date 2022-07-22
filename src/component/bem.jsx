@@ -6,8 +6,8 @@ const bem = () => {
   };
   return (
     <div className="my-4 text-center">
-      <h1 className=" text-sky-500 font-['Montserrat'] text-2xl font-bold my-4 drop-shadow-md shadow-black md:text-4xl">
-        Kembali Mengudara Bersama Energi Baru
+      <h1 className=" text-sky-500 font-['Montserrat'] italic text-2xl font-bold my-4 drop-shadow-md shadow-black md:text-4xl">
+        "Kembali Mengudara Bersama Energi Baru"
       </h1>
       <img src="" alt="" />
       <div
