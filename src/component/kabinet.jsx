@@ -92,7 +92,7 @@ const kabinet = () => {
         <li>
           <img
             className="w-40 h-40 block mx-auto"
-            src={Images.kemenkeu}
+            src={Images.kemenparekraf}
             alt="KEMENPAREKRAF"
           />
         </li>
