@@ -14,8 +14,8 @@ const form = () => {
           Alamat
         </h2>
         <p className="tracking-wide text-center my-2 text-lg md:text-left w-auto">
-          Jalan Merdeka No 4., Kec. Taman Sari - Kota Pangkalpinang - Prov.
-          Bangka Belitung. Kode Pos, 33121.
+          Balai Ormawa, Kampus Terpadu Universitas Bangka Belitung. Balunijuk,
+          Kabupaten Bangka, Provinsi Kepulauan Bangka Belitung
         </p>
         <h2>
           <span className="mr-4">
@@ -23,7 +23,7 @@ const form = () => {
           </span>
           Telepon
         </h2>
-        <p className="tracking-wide my-4  text-lg">0717-422145</p>
+        <p className="tracking-wide my-4  text-lg">0821-7980-8274 </p>
         <h2>
           <span className="mr-4">
             <MdEmail className="inline-block align-top text-2xl text-sky-500 " />

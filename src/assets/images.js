@@ -13,7 +13,7 @@ const Image = {
   kemensora: require('../assets/Logo Kementerian/kemensora.png'),
   kemenlh: require('../assets/Logo Kementerian/kemenLH.png'),
   //   logo ini belum ada
-  kemenparekraf: require('../assets/Logo Kementerian/kem.keuangan.png'),
+  kemenparekraf: require('../assets/Logo Kementerian/kemenparekraf.png'),
   kemenkastrat: require('../assets/Logo Kementerian/kemenkastrag.png'),
   kemenagsos: require('../assets/Logo Kementerian/kemenagsos.png'),
 };
