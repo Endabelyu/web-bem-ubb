@@ -23,22 +23,20 @@ const navbar = () => {
         <FiSearch className="hover:text-sky-400 cursor-pointer mx-4 text-xl" />
       </div>
       <hr className="bg-bg-zinc-500" />
-      <div className="flex justify-between my-2.5 px-10 ">
-        <div>
+      <div className="flex justify-between my-2.5 px-36 ">
+        <div className="mr-[80px]">
           <img
             src={Images.logoBEM}
             className=" cursor-pointer object-center h-20  w-20"
             alt="Logo-BEM-UBB"
           />
         </div>
-        <ul className=" hidden md:flex justify-between mr-4 align-middle py-5 ">
-          <li className="cursor-pointer mx-2 hover:text-sky-400 ">Beranda</li>
-          <li className="cursor-pointer mx-2 hover:text-sky-400">
-            Tentang Kami
-          </li>
-          <li className="cursor-pointer mx-2 hover:text-sky-400">Event</li>
-          <li className="cursor-pointer mx-2 hover:text-sky-400">News</li>
-          <li className="cursor-pointer mx-2 hover:text-sky-400">Kontak</li>
+        <ul className=" hidden md:flex justify-around w-full align-middle py-5">
+          <li className="cursor-pointer  hover:text-sky-400 ">Beranda</li>
+          <li className="cursor-pointer  hover:text-sky-400">Tentang Kami</li>
+          <li className="cursor-pointer  hover:text-sky-400">Event</li>
+          <li className="cursor-pointer  hover:text-sky-400">News</li>
+          <li className="cursor-pointer  hover:text-sky-400">Kontak</li>
         </ul>
       </div>
     </div>
