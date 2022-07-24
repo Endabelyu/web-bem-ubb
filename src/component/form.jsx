@@ -35,7 +35,7 @@ const form = () => {
           <label />
           <input
             className="col-span-1 my-2 border border-slate-400 p-2 rounded-md focus:outline-sky-300"
-            placeholder="Nama"
+            placeholder=" Nama"
           />
           <input
             className="col-span-1 my-2 border border-slate-400 p-2 rounded-md focus:outline-sky-300"
