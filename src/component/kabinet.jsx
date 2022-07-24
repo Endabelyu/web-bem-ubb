@@ -4,14 +4,14 @@ const kabinet = () => {
   return (
     <div className="my-1 text-center ">
       <img
-        className=" inline-block mx-auto h-[20rem] w-[20rem] my-[-40px] md:my-[-50px]  md:h-[30rem] md:w-[30rem]"
+        className=" inline-block mx-auto h-[18rem] w-[18rem] my-[-40px] md:my-[-50px]  md:h-[30rem] md:w-[30rem]"
         src={Images.logoKabinet}
         alt="Logo Kabinet Energi Biru"
       />
-      <p className="mt-4 mb-8 font-bold  text-2xl text-sky-400 drop-shadow-md shadow-black md:text-3xl ">
+      <p className="mt-4 mb-8 mx-4 font-bold text-center text-2xl text-sky-400 drop-shadow-md shadow-black md:text-3xl ">
         Kolaborasi 14 Kementerian BEM KM UBB 2022
       </p>
-      <ul className="grid grid-cols-[0.5fr_0.5fr] h-auto w-[550px] mx-auto  border-slate-300 border-dashed  border-4 rounded md:h-auto md:w-auto content-center md:grid-cols-7 md:gap-3">
+      <ul className="grid grid-cols-[0.5fr_0.5fr] h-auto w-3/4 mx-auto  border-slate-300 border-dashed  border-4 rounded md:h-auto md:w-auto content-center md:grid-cols-7 md:gap-3">
         <li>
           <img
             className="w-40 h-40 block mx-auto"

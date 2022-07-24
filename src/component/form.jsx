@@ -8,20 +8,20 @@ const form = () => {
       <h1 className=" col-span-2 font-bold text-2xl tracking-wide text-sky-400">
         Kontak Kami
       </h1>
-      <div className="grid  grid-cols-2 text-left col-span-2 mt-10 md:col-span-1 w-[550px] md:w-full mx-auto md: px-4 ">
-        <p className="tracking-wide my-4  text-xl">
-          <span className="mr-4">
+      <div className="grid  grid-cols-2 text-left col-span-2 mt-10 md:col-span-1 w-full md:w-full mx-auto md: px-4 ">
+        <p className="tracking-wide my-4 text-lg md:text-xl col-span-2 md:col-span-1">
+          <span className="mr-4 w-full ">
             <IoCall className="inline-block align-top text-2xl text-sky-500 " />
           </span>
           0821-7980-8274
         </p>
-        <p className="tracking-wide my-4 text-xl">
+        <p className="tracking-wide my-4 text-xl  col-span-2 md:col-span-1">
           <span className="mr-4">
             <MdEmail className="inline-block align-top text-2xl text-sky-500 " />
           </span>
           bemkmubb@gmail.com
         </p>
-        <p className="col-span-2  tracking-wide text-center my-2 text-lg md:text-left w-auto">
+        <p className="col-span-2  tracking-wide text-justify  my-2 text-lg md:text-left w-auto">
           <IoMdPin className="inline-block text-left align-top text-2xl mr-4  text-sky-500" />
           <span>
             Balai Ormawa, Kampus Terpadu Universitas Bangka Belitung.
