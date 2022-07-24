@@ -23,11 +23,11 @@ const navbar = () => {
         <FiSearch className="hover:text-sky-400 cursor-pointer mx-4 text-xl" />
       </div>
       <hr className="bg-bg-zinc-500" />
-      <div className="flex justify-between my-2.5 px-36 ">
-        <div className="mr-[80px]">
+      <div className="md:flex justify-between my-2.5 md:px-36 ">
+        <div className="md:mr-[80px]">
           <img
             src={Images.logoBEM}
-            className=" cursor-pointer object-center h-20  w-20"
+            className=" cursor-pointer md:object-center w-16 h-16 ml-10 md:h-20  md:w-20"
             alt="Logo-BEM-UBB"
           />
         </div>

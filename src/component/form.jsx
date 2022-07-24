@@ -8,7 +8,7 @@ const form = () => {
       <h1 className=" col-span-2 font-bold text-2xl tracking-wide text-sky-400">
         Kontak Kami
       </h1>
-      <div className="grid  grid-cols-2 text-left col-span-2 py-4 md:col-span-1 w-[550px] md:w-full mx-auto md: px-4 ">
+      <div className="grid  grid-cols-2 text-left col-span-2 mt-10 md:col-span-1 w-[550px] md:w-full mx-auto md: px-4 ">
         <p className="tracking-wide my-4  text-xl">
           <span className="mr-4">
             <IoCall className="inline-block align-top text-2xl text-sky-500 " />
@@ -22,14 +22,14 @@ const form = () => {
           bemkmubb@gmail.com
         </p>
         <p className="col-span-2  tracking-wide text-center my-2 text-lg md:text-left w-auto">
+          <IoMdPin className="inline-block text-left align-top text-2xl mr-4  text-sky-500" />
           <span>
-            <IoMdPin className="inline-block text-left align-top text-2xl mr-4  text-sky-500" />
+            Balai Ormawa, Kampus Terpadu Universitas Bangka Belitung.
+            Balunijuk,Kabupaten Bangka, Provinsi Kepulauan Bangka Belitung
           </span>
-          Balai Ormawa, Kampus Terpadu Universitas Bangka Belitung. Balunijuk,
-          Kabupaten Bangka, Provinsi Kepulauan Bangka Belitung
         </p>
       </div>
-      <div className="col-span-2 border rounded-md shadow-md p-6 md:col-span-1 md:w-full">
+      <div className="col-span-2 border rounded-md shadow-xl p-6 md:col-span-1 md:w-full">
         <form className="grid">
           <h2 className="text-lg font-bold">Send Mesage</h2>
           <label />

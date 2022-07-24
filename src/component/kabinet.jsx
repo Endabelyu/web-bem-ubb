@@ -1,6 +1,6 @@
 import React from 'react';
 import Images from '../assets/images.js';
-const kabinet = () => { 
+const kabinet = () => {
   return (
     <div className="my-1 text-center ">
       <img
