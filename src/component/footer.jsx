@@ -1,4 +1,6 @@
 import React from 'react';
+import { BsSuitHeartFill } from 'react-icons/bs';
+import { AiOutlineCopyrightCircle } from 'react-icons/ai';
 
 const footer = () => {
   const BEM = {
@@ -10,12 +12,21 @@ const footer = () => {
     <div className="p-10 border-t-2 border-gray-400">
       <div className="flex flex-col justify-center ">
         <p className=" text-center text-md">
-          Made With love by
+          Made With
+          <span>
+            <BsSuitHeartFill className="inline mx-2 text-md text-red-600" />
+          </span>
+          by
           <a href={BEM.url} target={BEM.target} className="ml-2">
             BEM KM UBB
           </a>
         </p>
-        <p className=" text-center text-md">C All right Reversed | 2022</p>
+        <p className=" text-center text-md">
+          <span>
+            <AiOutlineCopyrightCircle className="inline mx-1 text-xl" />
+          </span>
+          BEM KM UBB, All right Reversed | 2022
+        </p>
       </div>
     </div>
   );
