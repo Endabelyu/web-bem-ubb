@@ -14,6 +14,7 @@ const kabinet = () => {
       <ul className="grid grid-cols-[0.5fr_0.5fr] h-auto w-3/4 mx-auto  border-slate-300 border-dashed  border-4 rounded md:h-auto md:w-auto content-center md:grid-cols-7 md:gap-3">
         <li>
           <img
+            fetchpriority="high"
             className="w-40 h-40 block mx-auto"
             src={Images.kemensekneg}
             alt="KEMENSEKNEG"
