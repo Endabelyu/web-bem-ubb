@@ -1,6 +1,6 @@
 const Image = {
   logoBEM: require('../assets/LOGO BEM/LOGO-BEM-UBB.1.png'),
-  logoKabinet: require('../assets/LOGO BEM/ENERGI-BIRU.1.png'),
+  logoKabinet: require('../assets/LOGO BEM/ENERGI-BIRU.png'),
   kemensekneg: require('../assets/Logo Kementerian/kemensekneg-baru.1.png'),
   kemenkeu: require('../assets/Logo Kementerian/kem.keuangan.1.png'),
   kemenlu: require('../assets/Logo Kementerian/kemenlu-baru.1.png'),
