@@ -14,7 +14,7 @@ const footer = () => {
         <p className=" text-center text-md">
           Made With
           <span>
-            <BsSuitHeartFill className="inline mx-2 text-md text-red-600" />
+            <BsSuitHeartFill className="inline mx-2 text-xl text-red-600" />
           </span>
           by
           <a href={BEM.url} target={BEM.target} className="ml-2">
