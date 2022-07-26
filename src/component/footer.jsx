@@ -9,9 +9,9 @@ const footer = () => {
   };
 
   return (
-    <div className="p-10 border-t-2 border-gray-400">
+    <div className="p-10 border-t-2 border-gray-400 bg-[#4E5166] ">
       <div className="flex flex-col justify-center ">
-        <p className=" text-center text-md">
+        <p className=" text-center text-slate-50 text-md">
           Made With
           <span>
             <BsSuitHeartFill className="inline mx-2 text-xl text-red-600" />
@@ -21,9 +21,9 @@ const footer = () => {
             BEM KM UBB
           </a>
         </p>
-        <p className=" text-center text-md">
+        <p className=" text-center text-md text-slate-50 ">
           <span>
-            <AiOutlineCopyrightCircle className="inline mx-1 text-xl" />
+            <AiOutlineCopyrightCircle className="inline mx-1 text-lg align-top" />
           </span>
           BEM KM UBB, All right Reversed | 2022
         </p>

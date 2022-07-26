@@ -5,7 +5,7 @@ import { MdEmail } from 'react-icons/md';
 const form = () => {
   return (
     <div className="grid grid-cols-2 gap-4 my-10 text-center p-6">
-      <h1 className=" col-span-2 font-bold text-2xl tracking-wide text-sky-400">
+      <h1 className=" col-span-2 font-bold text-2xl tracking-wide text-[#0471A6]">
         Kontak Kami
       </h1>
       <div className="grid  grid-cols-2 text-left col-span-2 mt-10 md:col-span-1 w-full md:w-full mx-auto md: px-4 ">

@@ -7,7 +7,7 @@ import Images from '../assets/images.js';
 
 const navbar = () => {
   return (
-    <div className="p-2 shadow-lg top-0 left-0">
+    <div className="p-2 shadow-xl top-0 left-0 bg-[#ffff]">
       <div className="flex  justify-between my-2">
         <ul className="flex ">
           <li>
@@ -31,7 +31,7 @@ const navbar = () => {
             alt="Logo-BEM-UBB"
           />
         </div>
-        <ul className=" hidden md:flex justify-around w-full align-middle py-5">
+        <ul className=" hidden md:flex justify-around text-[#4E5166] w-full align-middle py-5">
           <li className="cursor-pointer  hover:text-sky-400 ">Beranda</li>
           <li className="cursor-pointer  hover:text-sky-400">Tentang Kami</li>
           <li className="cursor-pointer  hover:text-sky-400">Event</li>

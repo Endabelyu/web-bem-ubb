@@ -8,7 +8,7 @@ import Image from './assets/images';
 import Footer from './component/footer';
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-[#ffffff]">
       <Helmet>
         <meta charSet="utf-8" />
         <title className="font-bold">BEM KM UBB</title>
