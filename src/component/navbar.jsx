@@ -3,6 +3,11 @@ import { SiLinktree } from 'react-icons/si';
 import { SiInstagram } from 'react-icons/si';
 import { SiYoutube } from 'react-icons/si';
 import { FiSearch } from 'react-icons/fi';
+import { BsInfoLg } from 'react-icons/bs';
+import { ImNewspaper } from 'react-icons/im';
+import { IoHome } from 'react-icons/io5';
+import { MdOutlineEventAvailable } from 'react-icons/md';
+import { MdPermContactCalendar } from 'react-icons/md';
 import Images from '../assets/images.js';
 
 const navbar = () => {
@@ -31,12 +36,25 @@ const navbar = () => {
             alt="Logo-BEM-UBB"
           />
         </div>
-        <ul className=" hidden md:flex justify-around text-[#4E5166] w-full align-middle py-5">
-          <li className="cursor-pointer  hover:text-sky-400 ">Beranda</li>
-          <li className="cursor-pointer  hover:text-sky-400">Tentang Kami</li>
-          <li className="cursor-pointer  hover:text-sky-400">Event</li>
-          <li className="cursor-pointer  hover:text-sky-400">News</li>
-          <li className="cursor-pointer  hover:text-sky-400">Kontak</li>
+        <ul className=" hidden md:flex justify-around text-[#4E5166] w-[90%] align-middle py-5">
+          <li className="cursor-pointer  hover:text-sky-400 ">
+            <IoHome className="inline text-2xl mr-2 align-top" /> Beranda
+          </li>
+          <li className="cursor-pointer  hover:text-sky-400">
+            <BsInfoLg className="inline align-top text-xl" /> Tentang Kami
+          </li>
+          <li className="cursor-pointer  hover:text-sky-400">
+            <MdOutlineEventAvailable className="inline text-2xl mr-2 align-top" />
+            Event
+          </li>
+          <li className="cursor-pointer  hover:text-sky-400">
+            <ImNewspaper className="inline text-2xl mr-2 align-top" />
+            News
+          </li>
+          <li className="cursor-pointer  hover:text-sky-400">
+            <MdPermContactCalendar className="inline text-2xl mr-2 align-top" />
+            Kontak
+          </li>
         </ul>
       </div>
     </div>
