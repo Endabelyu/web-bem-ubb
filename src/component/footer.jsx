@@ -17,7 +17,11 @@ const footer = () => {
             <BsSuitHeartFill className="inline mx-2 text-xl text-red-600" />
           </span>
           by
-          <a href={BEM.url} target={BEM.target} className="ml-2">
+          <a
+            href={BEM.url}
+            target={BEM.target}
+            className="ml-2 hover:underline"
+          >
             BEM KM UBB
           </a>
         </p>
