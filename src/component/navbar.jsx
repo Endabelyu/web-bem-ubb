@@ -9,10 +9,11 @@ import { IoHome } from 'react-icons/io5';
 import { MdOutlineEventAvailable } from 'react-icons/md';
 import { MdPermContactCalendar } from 'react-icons/md';
 import Images from '../assets/images.js';
+import { Link } from 'react-scroll';
 
 const navbar = () => {
   return (
-    <div className="p-2 shadow-xl top-0 left-0 bg-[#ffff]">
+    <div className="p-2 shadow-xl top-0 left-0 bg-[#ffff] fixed z-10 w-full">
       <div className="flex  justify-between my-2">
         <ul className="flex ">
           <li>
@@ -38,22 +39,58 @@ const navbar = () => {
         </div>
         <ul className=" hidden md:flex justify-around text-[#4E5166] w-[90%] align-middle py-5">
           <li className="cursor-pointer  hover:text-sky-400 ">
-            <IoHome className="inline text-2xl mr-2 align-top" /> Beranda
+            <Link
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-200}
+              duration={1000}
+            >
+              <IoHome className="inline text-2xl mr-2 align-top" /> Beranda
+            </Link>
           </li>
           <li className="cursor-pointer  hover:text-sky-400">
-            <BsInfoLg className="inline align-top text-xl" /> Tentang Kami
+            <Link
+              activeClass="active"
+              to="test1"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              <BsInfoLg className="inline align-top text-xl" /> Tentang Kami
+            </Link>
           </li>
           <li className="cursor-pointer  hover:text-sky-400">
-            <MdOutlineEventAvailable className="inline text-2xl mr-2 align-top" />
-            Event
+            <Link
+              activeClass="active"
+              to="test1"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              <MdOutlineEventAvailable className="inline text-2xl mr-2 align-top" />
+              Event
+            </Link>
           </li>
           <li className="cursor-pointer  hover:text-sky-400">
             <ImNewspaper className="inline text-2xl mr-2 align-top" />
             News
           </li>
           <li className="cursor-pointer  hover:text-sky-400">
-            <MdPermContactCalendar className="inline text-2xl mr-2 align-top" />
-            Kontak
+            <Link
+              activeClass="active"
+              to="kontak"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={1000}
+            >
+              <MdPermContactCalendar className="inline text-2xl mr-2 align-top" />
+              Kontak
+            </Link>
           </li>
         </ul>
       </div>

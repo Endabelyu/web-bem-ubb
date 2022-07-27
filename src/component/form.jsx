@@ -4,7 +4,7 @@ import { IoCall } from 'react-icons/io5';
 import { MdEmail } from 'react-icons/md';
 const form = () => {
   return (
-    <div className="grid grid-cols-2 gap-4 my-10 text-center p-6">
+    <div id="kontak" className="grid grid-cols-2 gap-4 my-10 text-center p-6">
       <h1 className=" col-span-2 font-bold text-2xl tracking-wide text-[#0471A6]">
         Kontak Kami
       </h1>
