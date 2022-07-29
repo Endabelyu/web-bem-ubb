@@ -10,8 +10,14 @@ import { MdOutlineEventAvailable } from 'react-icons/md';
 import { MdPermContactCalendar } from 'react-icons/md';
 import Images from '../assets/images.js';
 import { Link } from 'react-scroll';
+// import { Spiral as Hamburger } from 'hamburger-react';
 
-const navbar = () => {
+const Navbar = () => {
+  // const [isOpen, setOpen] = useState(false);
+  // const handleNav = () => {
+  //   setOpen(!isOpen);
+  //   console.log(isOpen);
+  // };
   return (
     <div className="p-2 shadow-xl top-0 left-0 bg-[#ffff] fixed z-10 w-full">
       <div className="flex  justify-between my-2">
@@ -29,13 +35,18 @@ const navbar = () => {
         <FiSearch className="hover:text-sky-400 cursor-pointer mx-4 text-xl" />
       </div>
       <hr className="bg-bg-zinc-500" />
-      <div className="md:flex justify-between my-2.5 md:px-36 ">
+      <div className="flex md:flex justify-between  my-2.5 pl-6 pr-6 md:px-36 ">
         <div className="md:mr-[80px]">
           <img
             src={Images.logoBEM}
-            className=" cursor-pointer md:object-center w-16 h-16 ml-10 md:h-20  md:w-20"
+            className=" cursor-pointer md:object-center w-16 h-16  md:h-20  md:w-20"
             alt="Logo-BEM-UBB"
           />
+        </div>
+        <div className=" flex flex-col justify-center h-[40px] w-[40px] mt-1.5 right-5 z-10 md:hidden ">
+          <span className=" h-[7px] w-full mt-2  rounded-sm bg-cyan-300" />
+          <span className="  h-[7px]  mt-2  w-full rounded-sm bg-cyan-300" />
+          <span className="  h-[7px]  mt-2 w-full rounded-sm bg-cyan-300" />
         </div>
         <ul className=" hidden md:flex justify-around text-[#4E5166] w-[90%] align-middle py-5">
           <li className="cursor-pointer  hover:text-sky-400 ">
@@ -85,7 +96,7 @@ const navbar = () => {
               to="kontak"
               spy={true}
               smooth={true}
-              offset={50}
+              offset={-150}
               duration={1000}
             >
               <MdPermContactCalendar className="inline text-2xl mr-2 align-top" />
@@ -98,4 +109,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;

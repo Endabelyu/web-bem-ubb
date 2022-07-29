@@ -8,7 +8,7 @@ const kabinet = () => {
         src={Images.logoKabinet}
         alt="Logo Kabinet Energi Biru"
       />
-      <p className="mt-4 mb-8 mx-4 font-bold text-center text-2xl text-[#0471A6] drop-shadow-md shadow-black md:text-3xl ">
+      <p className="mt-4 mb-8 mx-4 font-bold text-center text-2xl text-[#0471A6] drop-shadow-md shadow-black md:text-3xl z-0 ">
         Kolaborasi 14 Kementerian BEM KM UBB 2022
       </p>
       <ul className="grid grid-cols-[0.5fr_0.5fr] h-auto w-3/4 mx-10 border-slate-300 border-dashed  border-4  rounded md:h-auto md:w-auto content-center md:grid-cols-7 md:gap-3">
