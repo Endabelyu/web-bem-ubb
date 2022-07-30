@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { SiLinktree } from 'react-icons/si';
 import { SiInstagram } from 'react-icons/si';
 import { SiYoutube } from 'react-icons/si';
@@ -13,17 +13,18 @@ import { Link } from 'react-scroll';
 // import { Spiral as Hamburger } from 'hamburger-react';
 
 const Navbar = () => {
-  // const [isOpen, setOpen] = useState(false);
-  // const handleNav = () => {
-  //   setOpen(!isOpen);
-  //   console.log(isOpen);
-  // };
+  const [nav, setNav] = useState(false);
+  const handleNav = () => {
+    setNav(!nav);
+    console.log(nav);
+  };
+
   return (
     <div className="p-2 shadow-xl top-0 left-0 bg-[#ffff] fixed z-10 w-full">
       <div className="flex  justify-between my-2">
         <ul className="flex ">
           <li>
-            <SiYoutube className=" hover:text-red-600 cursor-pointer  mx-4 text-xl" />
+            <SiYoutube className=" hover:text-red-600 cursor-pointer  mx-4 text-xl " />
           </li>
           <li>
             <SiLinktree className=" hover:text-green-600 hover:drop-shadow-md cursor-pointer mx-4 text-xl" />
@@ -35,7 +36,7 @@ const Navbar = () => {
         <FiSearch className="hover:text-sky-400 cursor-pointer mx-4 text-xl" />
       </div>
       <hr className="bg-bg-zinc-500" />
-      <div className="flex md:flex justify-between  my-2.5 pl-6 pr-6 md:px-36 ">
+      <div className="navbar-container flex md:flex justify-between  my-2.5 pl-6 pr-6 md:px-36 ">
         <div className="md:mr-[80px]">
           <img
             src={Images.logoBEM}
@@ -43,10 +44,20 @@ const Navbar = () => {
             alt="Logo-BEM-UBB"
           />
         </div>
-        <div className=" flex flex-col justify-center h-[40px] w-[40px] mt-1.5 right-5 z-10 md:hidden ">
-          <span className=" h-[7px] w-full mt-2  rounded-sm bg-cyan-300" />
-          <span className="  h-[7px]  mt-2  w-full rounded-sm bg-cyan-300" />
-          <span className="  h-[7px]  mt-2 w-full rounded-sm bg-cyan-300" />
+        <input
+          type="checkbox"
+          className="absolute h-[50px] w-[50px] right-[30px] z-[15] opacity-0 border-none md:hidden"
+        />
+        <div
+          id="hbcon"
+          onClick={handleNav}
+          className={
+            ' flex flex-col justify-center h-[40px] w-[40px] mt-1.5 right-5 z-10 md:hidden '
+          }
+        >
+          <span className="line1 h-[7px] w-full mt-2  rounded-sm bg-cyan-300 transition ease-in-out duration-500" />
+          <span className="line2  h-[7px]  mt-2  w-full rounded-sm bg-cyan-300 ease-in-out transition duration-500" />
+          <span className="line3  h-[7px]  mt-2 w-full rounded-sm bg-cyan-300 transition ease-in-out duration-500" />
         </div>
         <ul className=" hidden md:flex justify-around text-[#4E5166] w-[90%] align-middle py-5">
           <li className="cursor-pointer  hover:text-sky-400 ">

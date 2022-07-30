@@ -10,4 +10,41 @@
   body {
     @apply font-['Roboto'];
   }
+  .line1 {
+    @apply bg-black;
+  }
+  .line2 {
+    @apply bg-black;
+  }
+  .line3 {
+    @apply bg-black;
+  }
+  .navbar-container input[type='checkbox']:checked ~ #hbcon .line1 {
+    @apply translate-y-[.83rem];
+    -webkit-transform: ;
+    -moz-transform: ;
+    -ms-transform: ;
+    -o-transform: ;
+  }
+  .navbar-container input[type='checkbox']:checked ~ #hbcon .line2 {
+    @apply translate-x-0;
+    -webkit-transform: ;
+    -moz-transform: ;
+    -ms-transform: ;
+    -o-transform: ;
+  }
+  .navbar-container input[type='checkbox']:checked ~ #hbcon .line3 {
+    @apply -translate-y-[.83rem];
+    -webkit-transform: ;
+    -moz-transform: ;
+    -ms-transform: ;
+    -o-transform: ;
+  }
 }
+
+/* input[type='checkbox']:checked + #hbcon .line1 {
+    bg-color: ;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg); */
