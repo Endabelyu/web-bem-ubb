@@ -16,7 +16,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
-    console.log(nav);
+    document.getElementsById('open').classList.add('bg-black opacity-5');
   };
 
   return (
@@ -45,22 +45,26 @@ const Navbar = () => {
           />
         </div>
         <input
+          onClick={handleNav}
           type="checkbox"
           className="absolute h-[50px] w-[50px] right-[30px] z-[15] opacity-0 border-none md:hidden"
         />
         <div
           id="hbcon"
-          onClick={handleNav}
           className={
             ' flex flex-col justify-center h-[40px] w-[40px] mt-1.5 right-5 z-10 md:hidden '
           }
         >
-          <span className="line1 h-[7px] w-full mt-2  rounded-sm bg-cyan-300 transition ease-in-out duration-500" />
-          <span className="line2  h-[7px]  mt-2  w-full rounded-sm bg-cyan-300 ease-in-out transition duration-500" />
-          <span className="line3  h-[7px]  mt-2 w-full rounded-sm bg-cyan-300 transition ease-in-out duration-500" />
+          <span className="line1 h-[7px] w-full mt-2  rounded-sm bg-cyan-300 transition ease-in-out duration-[600ms]" />
+          <span className="line2  h-[7px]  mt-2  w-full rounded-sm bg-cyan-300 ease-in-out transition duration-[600ms]" />
+          <span className="line3  h-[7px]  mt-2 w-full rounded-sm bg-cyan-300 transition ease-in-out duration-[600ms]" />
         </div>
-        <ul className=" hidden md:flex justify-around text-[#4E5166] w-[90%] align-middle py-5">
-          <li className="cursor-pointer  hover:text-sky-400 ">
+        <ul
+          className={
+            'sidebarcon absolute w-1/2 h-[100vh]  px-5 py-6 right-0 top-[8.5rem] bg-white justify-around text-[#4E5166] transition duration-500 translate-x-full md:right-none md:static  md:flex  md:px-0 md:w-[90%] md:translate-x-0 md:h-auto align-middle md:py-5'
+          }
+        >
+          <li className="mb-5 cursor-pointer  hover:text-sky-400 ">
             <Link
               activeClass="active"
               to="home"
@@ -72,7 +76,7 @@ const Navbar = () => {
               <IoHome className="inline text-2xl mr-2 align-top" /> Beranda
             </Link>
           </li>
-          <li className="cursor-pointer  hover:text-sky-400">
+          <li className="mb-5 cursor-pointer  hover:text-sky-400">
             <Link
               activeClass="active"
               to="test1"
@@ -84,7 +88,7 @@ const Navbar = () => {
               <BsInfoLg className="inline align-top text-xl" /> Tentang Kami
             </Link>
           </li>
-          <li className="cursor-pointer  hover:text-sky-400">
+          <li className="mb-5 cursor-pointer  hover:text-sky-400">
             <Link
               activeClass="active"
               to="test1"
@@ -97,11 +101,11 @@ const Navbar = () => {
               Event
             </Link>
           </li>
-          <li className="cursor-pointer  hover:text-sky-400">
+          <li className="mb-5 cursor-pointer  hover:text-sky-400">
             <ImNewspaper className="inline text-2xl mr-2 align-top" />
             News
           </li>
-          <li className="cursor-pointer  hover:text-sky-400">
+          <li className="mb-5 cursor-pointer  hover:text-sky-400">
             <Link
               activeClass="active"
               to="kontak"

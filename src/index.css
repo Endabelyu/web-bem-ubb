@@ -20,25 +20,28 @@
     @apply bg-black;
   }
   .navbar-container input[type='checkbox']:checked ~ #hbcon .line1 {
-    @apply translate-y-[.83rem];
+    @apply transform translate-y-[.83rem] rotate-[315deg];
     -webkit-transform: ;
     -moz-transform: ;
     -ms-transform: ;
     -o-transform: ;
   }
   .navbar-container input[type='checkbox']:checked ~ #hbcon .line2 {
-    @apply translate-x-0;
+    @apply transform translate-x-0 rotate-[225deg] scale-0;
     -webkit-transform: ;
     -moz-transform: ;
     -ms-transform: ;
     -o-transform: ;
   }
   .navbar-container input[type='checkbox']:checked ~ #hbcon .line3 {
-    @apply -translate-y-[.83rem];
+    @apply transform -translate-y-[.83rem] rotate-[225deg];
     -webkit-transform: ;
     -moz-transform: ;
     -ms-transform: ;
     -o-transform: ;
+  }
+  .navbar-container input[type='checkbox']:checked ~ .sidebarcon {
+    @apply translate-x-0;
   }
 }
 
