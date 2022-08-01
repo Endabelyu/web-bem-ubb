@@ -10,13 +10,13 @@ import { MdOutlineEventAvailable } from 'react-icons/md';
 import { MdPermContactCalendar } from 'react-icons/md';
 import Images from '../assets/images.js';
 import { Link } from 'react-scroll';
-// import { Spiral as Hamburger } from 'hamburger-react';
+import { openVideo } from './bem';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
-    document.getElementsById('open').classList.add('bg-black opacity-5');
   };
 
   return (
@@ -79,7 +79,7 @@ const Navbar = () => {
           <li className="mb-5 cursor-pointer  hover:text-sky-400">
             <Link
               activeClass="active"
-              to="test1"
+              onClick={openVideo}
               spy={true}
               smooth={true}
               offset={50}
@@ -89,21 +89,16 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="mb-5 cursor-pointer  hover:text-sky-400">
-            <Link
-              activeClass="active"
-              to="test1"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-            >
+            <NavLink to="/event">
               <MdOutlineEventAvailable className="inline text-2xl mr-2 align-top" />
               Event
-            </Link>
+            </NavLink>
           </li>
           <li className="mb-5 cursor-pointer  hover:text-sky-400">
-            <ImNewspaper className="inline text-2xl mr-2 align-top" />
-            News
+            <NavLink to="/news">
+              <ImNewspaper className="inline text-2xl mr-2 align-top" />
+              News
+            </NavLink>
           </li>
           <li className="mb-5 cursor-pointer  hover:text-sky-400">
             <Link

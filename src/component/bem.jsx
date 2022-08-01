@@ -1,9 +1,9 @@
 import React from 'react';
 
+const openVideo = () => {
+  window.open('https://youtu.be/4aw10ZYs9Fk ', '_blank');
+};
 const bem = () => {
-  const openVideo = () => {
-    window.open('https://youtu.be/4aw10ZYs9Fk ', '_blank');
-  };
   return (
     <div id="home" className="mt-48 text-center ">
       <h1 className=" text-[#0471A6] font-['Montserrat'] italic  text-xl font-bold my-4 drop-shadow-md shadow-black md:text-4xl">
@@ -30,3 +30,4 @@ const bem = () => {
 };
 
 export default bem;
+export { openVideo };
