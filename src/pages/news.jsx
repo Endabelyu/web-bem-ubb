@@ -5,6 +5,9 @@ const news = () => {
   return (
     <div>
       <Navbar />
+      <div className="mt-48">
+        <h1>news </h1>
+      </div>
     </div>
   );
 };

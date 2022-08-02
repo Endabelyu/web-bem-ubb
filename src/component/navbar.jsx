@@ -19,18 +19,31 @@ const Navbar = () => {
     setNav(!nav);
   };
 
+  const anchorData = {
+    target: '_blank',
+    youtube:
+      'https://www.youtube.com/channel/UCLO2C-uhlR-x4LBqkpwv7xA/featured',
+    linktree: 'https://linktr.ee/bemkmubb',
+    instagram: 'https://www.instagram.com/bemkmubb/',
+  };
   return (
     <div className="p-2 shadow-xl top-0 left-0 bg-[#ffff] fixed z-10 w-full">
       <div className="flex  justify-between my-2">
         <ul className="flex ">
           <li>
-            <SiYoutube className=" hover:text-red-600 cursor-pointer  mx-4 text-xl " />
+            <a href={anchorData.youtube} target={anchorData.target}>
+              <SiYoutube className=" hover:text-red-600 cursor-pointer  mx-4 text-xl " />
+            </a>
           </li>
           <li>
-            <SiLinktree className=" hover:text-green-600 hover:drop-shadow-md cursor-pointer mx-4 text-xl" />
+            <a href={anchorData.linktree} target={anchorData.target}>
+              <SiLinktree className=" hover:text-green-600 hover:drop-shadow-md cursor-pointer mx-4 text-xl" />
+            </a>
           </li>
           <li>
-            <SiInstagram className="ig hover:text-fuchsia-500 cursor-pointer mx-4 text-xl" />
+            <a href={anchorData.instagram} target={anchorData.target}>
+              <SiInstagram className="ig hover:text-fuchsia-500 cursor-pointer mx-4 text-xl" />
+            </a>
           </li>
         </ul>
         <FiSearch className="hover:text-sky-400 cursor-pointer mx-4 text-xl" />
@@ -38,11 +51,20 @@ const Navbar = () => {
       <hr className="bg-bg-zinc-500" />
       <div className="navbar-container flex md:flex justify-between  my-2.5 pl-6 pr-6 md:px-36 ">
         <div className="md:mr-[80px]">
-          <img
-            src={Images.logoBEM}
-            className=" cursor-pointer md:object-center w-16 h-16  md:h-20  md:w-20"
-            alt="Logo-BEM-UBB"
-          />
+          <Link
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-200}
+            duration={1000}
+          >
+            <img
+              src={Images.logoBEM}
+              className=" cursor-pointer md:object-center w-16 h-16  md:h-20  md:w-20"
+              alt="Logo-BEM-UBB"
+            />
+          </Link>
         </div>
         <input
           onClick={handleNav}
@@ -65,16 +87,9 @@ const Navbar = () => {
           }
         >
           <li className="mb-5 cursor-pointer  hover:text-sky-400 ">
-            <Link
-              activeClass="active"
-              to="home"
-              spy={true}
-              smooth={true}
-              offset={-200}
-              duration={1000}
-            >
+            <NavLink to="/">
               <IoHome className="inline text-2xl mr-2 align-top" /> Beranda
-            </Link>
+            </NavLink>
           </li>
           <li className="mb-5 cursor-pointer  hover:text-sky-400">
             <Link

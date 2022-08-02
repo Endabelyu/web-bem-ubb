@@ -5,6 +5,9 @@ const event = () => {
   return (
     <div>
       <Navbar />
+      <div className="mt-48">
+        <h1>event</h1>
+      </div>
     </div>
   );
 };
