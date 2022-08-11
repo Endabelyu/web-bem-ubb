@@ -17,6 +17,7 @@ const Image = {
   kemenkastrat: require('../assets/Logo Kementerian/kemenkastrag.png'),
   kemenagsos: require('../assets/Logo Kementerian/kemenagsos.png'),
   kampusUBB: require('../assets/kampus-ubb-ni_20160531_104905.jpg'),
+  presWapres: require('../assets/IMG_0865.png'),
 };
 
 export default Image;

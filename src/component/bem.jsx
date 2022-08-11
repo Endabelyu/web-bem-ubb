@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from '../assets/images';
 
 const openVideo = () => {
   window.open('https://youtu.be/4aw10ZYs9Fk ', '_blank');
@@ -9,7 +10,11 @@ const bem = () => {
       <h1 className=" text-[#0471A6] font-['Montserrat'] italic  text-xl font-bold my-4 drop-shadow-md shadow-black md:text-4xl">
         "Kembali Mengudara Bersama Energi Baru"
       </h1>
-      <img src="" alt="" />
+      <img
+        className="w-full h-full md:3/4 md:3/4 mx-auto"
+        src={Image.presWapres}
+        alt="foto Presiden dan Wakil Presiden"
+      />
       <div
         onClick={openVideo}
         className="  w-36 h-12 mx-auto hover:scale-125 delay-75 cursor-pointer text-xl  border-black border rounded-md p-2 m-4 md:text-2xl md:w-44 hover:text-sky-400 hover:border-sky-400"
